@@ -23,7 +23,7 @@ services:
 
   #container do frontend
   frontend:
-    build: ./taiff_web
+    build: https://github.com/5ilasEliaquim/front-consumo.git
     #imagem de origem
     image: front-end
     #porta que irá operar
@@ -35,7 +35,7 @@ services:
 
   #container do backend
   backend-temperatura:
-    build: ./API-Temperatura\Projeto Java\taiffTemperatura
+    build: https://github.com/5ilasEliaquim/api-temperatura.git
     #Depende que o banco de dados tenha subido para subir em sequencia
     depends_on: 
       - db
@@ -50,7 +50,7 @@ services:
 
   #container do backend
   backend-posicionamento:
-    build: ./API-Posicionamento\Projeto Java\taiffPosicionamento
+    build: https://github.com/5ilasEliaquim/api-posicionamento.git
     #Depende que o banco de dados tenha subido para subir em sequencia
     depends_on: 
       - db
