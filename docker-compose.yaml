@@ -23,7 +23,7 @@ services:
 
   #container do frontend
   frontend:
-    build: https://github.com/5ilasEliaquim/front-consumo.git
+    build: https://github.com/5ilasEliaquim/front-consumo.git#main
     #imagem de origem
     image: front-end
     #porta que irá operar
@@ -35,7 +35,7 @@ services:
 
   #container do backend
   backend-temperatura:
-    build: https://github.com/5ilasEliaquim/api-temperatura.git
+    build: https://github.com/5ilasEliaquim/api-temperatura.git#main
     #Depende que o banco de dados tenha subido para subir em sequencia
     depends_on: 
       - db
@@ -50,7 +50,7 @@ services:
 
   #container do backend
   backend-posicionamento:
-    build: https://github.com/5ilasEliaquim/api-posicionamento.git
+    build: https://github.com/5ilasEliaquim/api-posicionamento.git#main
     #Depende que o banco de dados tenha subido para subir em sequencia
     depends_on: 
       - db
